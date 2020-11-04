@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client'
 import { ADD_OPERATION, READ_OPERATION } from '../graphql/graphql'
 import { Link } from 'gatsby';
 
-export default (location) => {
+export default () => {
     const [addNewRecord] = useMutation(ADD_OPERATION)
     const [name, setName] = React.useState()
     const [description, setDescription] = React.useState()

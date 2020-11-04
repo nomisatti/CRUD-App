@@ -2,11 +2,10 @@ import React from 'react'
 import { Button, Container, Form } from 'react-bootstrap';
 import { useMutation } from '@apollo/client'
 import { UPDATE_OPERATION , READ_OPERATION } from '../graphql/graphql'
-import { Link } from 'gatsby';
+import { Link , navigate } from 'gatsby';
 
 export default (state) => {
-    const userData  = state.location.state.e
-    console.log("Update Data: " , userData)
+    const userData  = state.location.state ? state.location.state.e : ''
     const [updateRecord] = useMutation(UPDATE_OPERATION )
     const [name, setName] = React.useState(userData.name)
     const [description, setDescription] = React.useState(userData.description)
