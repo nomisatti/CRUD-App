@@ -1,0 +1,33 @@
+.user-image{
+    width:50px !important;
+}
+
+/*
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #454d55;
+    width: 15%;
+}
+*/
+
+.table-dark td:nth-child(4), .table-dark th:nth-child(4), .table-dark thead th:nth-child(4) {
+    width:40% !important
+}
+.container{
+    margin-top:5%;
+}
+.spinner-border {
+    margin:20% 50% !important;
+}
+.notAvailable{
+    color: chocolate;
+}
+.spinner-grow{
+    margin:20% 50% !important;
+}
+
+.table-bordered td {
+    border: 0px;
+}
+.actions-buttons button{
+    margin: 0px 5px;
+}
